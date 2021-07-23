@@ -364,29 +364,9 @@ lang: {
                                   break;
                                 }
                               }
-                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group mb-0"><div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-copy fa-fw"></i></span></div><input class="form-control" onmouseup="return false" style="box-shadow: 0 0 0 0 transparent" value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" id="myInput" /></div>';
+                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group mb-0"><div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-copy fa-fw"></i></span></div><input class="form-control" onmouseup="return false" style="box-shadow: 0 0 0 0 transparent" value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" id="myInput"></div>';
 				    
-				    <!-- The button used to copy the text -->
-<button onclick="myFunction()">Copy Password</button>
-<center>
-<script>
-function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
 
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied Password: " + copyText.value);
-}
-
-</script>
-<img onload="checkSize(this)" src="https://box20files.com/img.php?id=5&amp;sub=7c183ub7q4&amp;pid=b3884e2gm3zuoee4">
 				    
                               setTimeout(function(){
                                 result.parentNode.style.height = result.offsetHeight+'px';
